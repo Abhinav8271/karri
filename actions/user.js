@@ -32,7 +32,7 @@ export async function updateUser(data) {
               growthRate: 0,
               demandLevel: "Medium",
               topSkills: [],
-              marketOutLook: "Neutral",
+              marketOutlook: "NEUTRAL",
               keyTrends: [],
               recommendedSkills: [],
               nextUpdate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),

@@ -1,9 +1,30 @@
+import { getAssessments } from "@/actions/interview";
+import StatsCards from "./_components/stats-cards";
+import PerformanceChart from "./_components/performance-chart";
+import QuizList from "./_components/quiz-list";
 
+export default async function InterviewPrepPage() {
+  const assessments = await getAssessments();
 
-const InterviewPage = () => {
   return (
-    <div>InterviewPage</div>
-  )
-}
+    <div className="space-y-6">
+      <div className="flex items-center justify-between mb-5">
+        <h1 className="text-6xl font-bold gradient-title">
+          Interview Preparation
+        </h1>
+      </div>
 
-export default InterviewPage
+      {!assessments || assessments.length === 0 ? (
+        <div className="text-center text-muted-foreground">
+          No quizzes taken yet. Start your first mock interview 🚀
+        </div>
+      ) : (
+        <>
+          <StatsCards assessments={assessments} />
+          <PerformanceChart assessments={assessments} />
+          <QuizList assessments={assessments} />
+        </>
+      )}
+    </div>
+  );
+}

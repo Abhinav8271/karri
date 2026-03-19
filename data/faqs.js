@@ -1,32 +1,32 @@
 export const faqs = [
   {
-    question: "What makes Sensai unique as a career development tool?",
+    question: "What makes Karri different from other career guidance platforms?",
     answer:
-      "Sensai combines AI-powered career tools with industry-specific insights to help you advance your career. Our platform offers three main features: an intelligent resume builder, a cover letter generator, and an adaptive interview preparation system. Each tool is tailored to your industry and skills, providing personalized guidance for your professional journey.",
+      "Karri is an AI-powered career guidance platform designed to provide personalized career support based on user interests and background. It offers features such as AI-generated career insights, interview preparation, resume building, and cover letter generation, helping users make informed career decisions in a single platform.",
   },
   {
-    question: "How does Sensai create tailored content?",
+    question: "How does Karri personalize career recommendations?",
     answer:
-      "Sensai learns about your industry, experience, and skills during onboarding. It then uses this information to generate customized resumes, cover letters, and interview questions. The content is specifically aligned with your professional background and industry standards, making it highly relevant and effective.",
+      "During onboarding, Karri collects information about the user’s education, skills, and interests. This data is then analyzed using AI to generate customized career insights, interview questions, and resume content that align with the user’s profile and career goals.",
   },
   {
-    question: "How accurate and up-to-date are Sensai's industry insights?",
+    question: "How are career insights generated and updated in Karri?",
     answer:
-      "We update our industry insights weekly using advanced AI analysis of current market trends. This includes salary data, in-demand skills, and industry growth patterns. Our system constantly evolves to ensure you have the most relevant information for your career decisions.",
+      "Karri uses AI to analyze current industry trends and generate career insights such as in-demand skills and role expectations. These insights are automatically refreshed on a regular basis to ensure users receive relevant and up-to-date guidance.",
   },
   {
-    question: "Is my data secure with Sensai?",
+    question: "Is user data secure in Karri?",
     answer:
-      "Absolutely. We prioritize the security of your professional information. All data is encrypted and securely stored using industry-standard practices. We use Clerk for authentication and never share your personal information with third parties.",
+      "Yes. Karri follows standard security practices to protect user data. Authentication is securely handled, and user information is stored in a protected database. Personal data is used only to provide personalized career guidance.",
   },
   {
-    question: "How can I track my interview preparation progress?",
+    question: "How does Karri help with interview preparation?",
     answer:
-      "Sensai tracks your performance across multiple practice interviews, providing detailed analytics and improvement suggestions. You can view your progress over time, identify areas for improvement, and receive AI-generated tips to enhance your interview skills based on your responses.",
+      "Karri provides AI-generated mock interview questions based on the user’s selected career field. It also offers performance feedback and insights to help users understand their strengths and areas for improvement.",
   },
   {
-    question: "Can I edit the AI-generated content?",
+    question: "Can users modify the AI-generated resumes and content?",
     answer:
-      "Yes! While Sensai generates high-quality initial content, you have full control to edit and customize all generated resumes, cover letters, and other content. Our markdown editor makes it easy to refine the content to perfectly match your needs.",
+      "Absolutely. Karri allows users to edit and customize all AI-generated resumes, cover letters, and content. This ensures flexibility and helps users tailor the output according to their personal preferences and requirements.",
   },
 ];

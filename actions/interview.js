@@ -52,7 +52,10 @@ export async function generateQuiz() {
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
     .join(" ");
 
-  const questionsPool = mcqBank[industryName]?.[subIndustryName];
+  const industryKeyInMcqBank =
+    industryName in mcqBank ? industryName : industryName.toLowerCase();
+
+  const questionsPool = mcqBank[industryKeyInMcqBank]?.[subIndustryName];
 
   if (!questionsPool || questionsPool.length === 0) {
     throw new Error(

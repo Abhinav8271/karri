@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { getAssessments } from "@/actions/interview";
+import { Button } from "@/components/ui/button";
 import StatsCards from "./_components/stats-cards";
 import PerformanceChart from "./_components/performance-chart";
 import QuizList from "./_components/quiz-list";
@@ -15,8 +17,13 @@ export default async function InterviewPrepPage() {
       </div>
 
       {!assessments || assessments.length === 0 ? (
-        <div className="text-center text-muted-foreground">
-          No quizzes taken yet. Start your first mock interview 🚀
+        <div className="flex flex-col items-center gap-4 rounded-lg border border-border p-8 text-center">
+          <p className="text-lg text-muted-foreground">
+            No quizzes taken yet. Start your first mock interview 🚀
+          </p>
+          <Link href="/interview/mock">
+            <Button size="lg">Go to Mock Interview</Button>
+          </Link>
         </div>
       ) : (
         <>

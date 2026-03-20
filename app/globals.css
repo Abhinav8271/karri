@@ -167,5 +167,54 @@
   background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.9));
 }
 
+.pdf-mode,
+.pdf-mode * {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  fill: #000 !important;
+  stroke: #000 !important;
+  background-image: none !important;
+}
+
+.pdf-mode {
+  --background: #fff !important;
+  --foreground: #000 !important;
+  --card: #fff !important;
+  --card-foreground: #000 !important;
+  --popover: #fff !important;
+  --popover-foreground: #000 !important;
+  --primary: #000 !important;
+  --primary-foreground: #fff !important;
+  --secondary: #fff !important;
+  --secondary-foreground: #000 !important;
+  --muted: #fff !important;
+  --muted-foreground: #000 !important;
+  --accent: #fff !important;
+  --accent-foreground: #000 !important;
+  --destructive: #000 !important;
+  --border: #000 !important;
+  --input: #fff !important;
+  --ring: #000 !important;
+}
+
+#resume-pdf,
+#resume-pdf * {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  fill: #000 !important;
+  stroke: #000 !important;
+}
+
+#resume-pdf img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
 
 

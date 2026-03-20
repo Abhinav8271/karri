@@ -46,11 +46,16 @@ export async function generateQuiz() {
     throw new Error("Industry not supported");
   }
 
-  // convert software-development → Software Development
+  // convert artificial-intelligence/machine-learning → Artificial Intelligence/Machine Learning
   const subIndustryName = subIndustryKey
-    .split("-")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
+    .split("/")
+    .map((segment) =>
+      segment
+        .split("-")
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(" ")
+    )
+    .join("/");
 
   const industryKeyInMcqBank =
     industryName in mcqBank ? industryName : industryName.toLowerCase();

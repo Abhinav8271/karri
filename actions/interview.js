@@ -29,15 +29,34 @@ export async function generateQuiz() {
   const industryKey = parts[0];
   const subIndustryKey = parts.slice(1).join("-");
 
-  const industryMap = {
+  // const industryMap = {
+  //   tech: "Technology",
+  //   finance: "Finance",
+  //   healthcare: "Healthcare",
+  //   education: "Education",
+  //   marketing: "Marketing",
+  //   consulting: "Consulting",
+  //   manufacturing: "Manufacturing",
+  //   retail: "Retail",
+  // };
+
+
+    const industryMap = {
     tech: "Technology",
-    finance: "Finance",
-    healthcare: "Healthcare",
-    education: "Education",
-    marketing: "Marketing",
-    consulting: "Consulting",
-    manufacturing: "Manufacturing",
-    retail: "Retail",
+    finance: "finance",
+    healthcare: "healthcare",
+    manufacturing: "manufacturing",
+    retail: "retail",
+    media: "media",
+    education: "education",
+    energy: "energy",
+    consulting: "consulting",
+    telecom: "telecom",
+    transportation: "transportation",
+    agriculture: "agriculture",
+    construction: "construction",
+    hospitality: "hospitality",
+    nonprofit: "nonprofit",
   };
 
   const industryName = industryMap[industryKey];
